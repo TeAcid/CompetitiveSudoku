@@ -1,0 +1,12 @@
+Kar se tièe preverjanja aktivnih oseb vam svetujem naslednje:
+- Naredite tabelo aktivna oseba in v njo ob prijavi zapišete ID uporabnika in trenutni èas.
+- Ob vsaki uporabnikovi zahtevi na spletno stran spremenite èas v tabeli aktivnaOseba na trenutni èas.
+- V javascript poglejte event beforeunload, ter ob njegovi sprožitvi naredite zahtevo na php stran, 
+  ki bo trenutnega uporabnika izbrisala iz seznama aktivnih oseb.
+- Seznam aktivnih oseb dobite tako, da iz tabele aktivnih oseb vrnete samo tistie, 
+  ki so naredili vsaj eno akcijo v zadnji XX minutah (privzeto je to 24 minut, da se pa spremeniti). 
+  Ostale lahko iz seznama izbrišete.
+ 
+ 
+Èe boste iz brskalnika z javascriptom vsako sekundo preverjali, 
+èe je kaj novega, boste tako imeli podatek o »živih« oz. aktivnih uporabnikih zelo ažuren.

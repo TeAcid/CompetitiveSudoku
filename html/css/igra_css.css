@@ -1,0 +1,84 @@
+/*++++++++++++++++++++++++++++++++++++Šahovnica++++++++++++++++++++++++++++++++++++*/
+	/*.col-sm-9 table {
+	  width: 90%;
+	}
+	.col-sm-9 td {
+	  width: 10%;
+	  position: relative;
+	}
+	.col-sm-9 td:after {
+	  content: '';
+	  display: block;
+	  margin-top: 100%;
+	}
+	.col-sm-9 td .content {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  opacity: 1.0;
+	}
+	.tabela {
+		border-style: solid;
+		border-width: 1px;
+		border-color: black;
+	}
+/*++++++++++++++++++++++++++++++++++++Celice++++++++++++++++++++++++++++++++++++*/
+	/*.prvi {
+		width: 10px;
+	}
+	.prvi_tr {
+		border-style: solid;
+		border-width: 1px;
+		border-color: black;
+		text-align: center;
+	}
+	.prvi_td {
+		text-align: center;
+		background-color: white;
+	}
+/*++++++++++++++++++++++++++++++++++++Responsive številke z indeksi ter barve polj++++++++++++++++++++++++++++++++++++*/
+	/*.stevilke {
+		font-size: 3vw;
+		vertical-align: middle;
+	}
+	.temna {
+		border-style: solid;
+		border-width: 1px;
+		border-color: #222222;
+		background-color: #8c6238;
+	}
+	.svetla {
+		border-style: solid;
+		border-width: 1px;
+		border-color: #222222;
+		background-color: #d8b58f;
+	}
+	.selected {
+		background-color: green;
+	}
+/*=================================================*/
+	/*.col-sm-9 table {
+	  width: 90%;
+	}
+	.col-sm-9 td {
+	  width: 10%;
+	  position: relative;
+	}
+	.col-sm-9 td:after {
+	  content: '';
+	  display: block;
+	  margin-top: 100%;
+	}
+	.col-sm-9 td .content{
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  opacity: 1;
+	}
+	.prvi {
+		width: 10px;
+	}

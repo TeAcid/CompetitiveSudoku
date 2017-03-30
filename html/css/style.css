@@ -1,0 +1,289 @@
+/*TISTI BOOTSTRAP STYLE-I*/
+.navbar 
+{
+	margin-bottom: 0;
+	border-radius: 0;
+}
+.row.content 
+{
+	height: 1020px;
+}
+.sidenav 
+{
+	padding-top: 20px;
+	background-color: #f1f1f1;
+	height: 100%;
+}
+footer 
+{
+	background-color: #555;
+	color: white;
+	padding: 15px;
+}
+
+@media screen and (max-width: 767px) 
+{
+	.sidenav 
+	{
+		height: auto;
+		padding: 15px;
+	}
+	.row.content 
+	{
+		height:auto;
+	} 
+	.navbar-brand
+	{
+		width: 100%;
+		text-align: center;
+		padding: 15px;
+	}
+	.navbar-right li
+	{
+		width: 50%;
+		float: right;
+		text-align: center;
+	}
+	.dropdown-menu form
+	{
+		margin-left: 10%;
+		margin-right: 10%;
+		width: 100%;
+	}
+	.item
+	{
+		padding-top: 10%;
+	}
+	
+	table.table-hover.telefon thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	/* za tabelo na telefoni  */
+	table.table-hover.telefon tr { border: 1px solid #ccc; }
+	
+	/*za tabelo na telefoni */
+	table.table-hover.telefon td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+		text-align: right;
+		display: block;
+	}
+	
+	table.table-hover.telefon td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align: left;
+	}
+	
+	table.table-hover.telefon td:nth-of-type(1):before { content: "Ime:"; }
+	table.table-hover.telefon td:nth-of-type(2):before { content: "Priimek:"; }
+	table.table-hover.telefon td:nth-of-type(3):before { content: "Uporabniško ime:"; }
+	table.table-hover.telefon td:nth-of-type(4):before { content: "Email:"; }
+	table.table-hover.telefon td:nth-of-type(5):before { content: "ELO:"; }
+	
+	#ang  {
+		display: none;
+	}
+
+}
+
+@media screen and (max-height: 500px) 
+{
+	#carouselContainer
+	{
+		display: none;
+	}
+	.dropdown-menu form
+	{
+		margin-left: 55%;
+		margin-right:55%;
+		min-width: 100%;
+	}
+}
+		  
+/*DROPDOWN ZA LOGIN*/
+.dropdown-menu
+{
+	width: 400px;
+	min-width: 300px;
+	padding: 15px;
+	padding-top: 0;
+}
+.myCheckBox
+{
+	margin: 5px;
+}
+h3
+{
+	color: grey;
+	opacity: 0.5;
+}
+
+/*BOOTSTRAP ALERT*/
+#alertRegistracija
+{
+	margin-top: 5px;
+	text-align: center;
+	visibility: hidden;
+}
+
+/*BUTTON PRI FORMI ZA REGISTRACIJO*/
+button[name="Dodaj"]
+{
+	width: 100%;
+	margin-top: 1px;
+}
+
+/*NAPAKE OB VNOSU PRI REGISTRACIJI*/
+div.error{
+    background-color:#f2dede;
+    border-color: #924949;
+    border-style: solid solid solid none;
+    border-width: 1px;
+	font-weight: bold;
+	color: #a94442;
+	font-size: 15px;
+	line-height: 15x;
+}
+
+/*Tabela, kjer se zapisujejo poteze*/
+#potezeRacunalnik
+{
+	overflow:auto;
+}
+
+/*Textbox in button za global chat*/
+#divGlobalchat, #chatDiv
+{
+	position: absolute;
+	left:0;
+	right:0;
+}
+
+#textboxGlobalChat
+{
+	width: 100%;
+}
+
+#buttonGlobalChat
+{
+	margin-top: 5px;
+	float: right;
+}
+
+#divGlobalChat
+{
+	margin: 0;
+	padding: 3px;
+	text-align: justify;
+    text-justify: inter-word;
+	height: 100%;
+	width: 100%;
+	overflow: scroll;
+}
+
+p
+{
+	text-align: justify;
+    text-justify: inter-word;
+	word-wrap: break-word
+}
+
+figure
+{
+	display: inline-block;
+}
+
+#arrRight
+{
+	margin-bottom: 500px;
+}
+
+figure figcaption
+{
+	text-align: center;
+}
+
+#chatDiv
+{
+	top: 5px;
+	margin: 0;
+	width: 100%;
+	height: 70%;
+}
+
+#globalChatSporocilo
+{
+	margin: 0;
+	width: 100%;
+	word-wrap: break-word;
+	/*height: 10%;*/
+}
+
+/*CAROUSEL*/
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%;
+}
+.item:nth-child(1) {
+  background: #74C390;
+}
+.item:nth-child(2) {
+  background: #51BCE8;
+}
+.item:nth-child(3) {
+  background: #E46653;
+}
+
+#carouselContainer
+{
+	height: 27.3%; 
+	width: 100%;
+}
+
+.item
+{
+	color: white;
+	font-weight: bold;
+	font-size: 10vw;
+	line-height: 10vw;
+	text-align: center;
+	font-family: "bauhaus 93";
+}
